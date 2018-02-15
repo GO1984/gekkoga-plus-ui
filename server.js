@@ -141,7 +141,7 @@ class UIServer {
     // Update history if there is a new top 50
     const isTopFifty = !!this.history.find(t => t.id == id);
     if (isTopFifty) {
-      fs.writeFile(historyFile, JSON.stringify(this.history), 'utf8');
+      fs.writeFile(historyFile, JSON.stringify(this.history), 'utf8', callback);
     }
   }
 
