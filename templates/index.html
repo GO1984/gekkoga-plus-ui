@@ -51,7 +51,7 @@
               <td><%= history[i].options[n].value %></td>
             <% } %>
             <td><%= history[i].results.trades %></td>
-            <td><%= history[i].results.relativeProfit %></td>
+            <td><%= history[i].results.relativeProfit.toFixed(2) %></td>
             <td><a data-json="<%= JSON.stringify(history[i].input) %>" class="copy-toml-button button">copy</a></td>
           </tr>
         <% } %>
